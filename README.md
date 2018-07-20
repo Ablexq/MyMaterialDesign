@@ -2,12 +2,18 @@
 
 参考：
 [使用CardView来设置阴影效果及点击效果](https://www.jianshu.com/p/9dd4db80d37a)
+
 [Toolbar设置详解----掉坑总结](https://www.jianshu.com/p/7b5c99e1cfa3)
+
 [Toolbar的使用](https://github.com/wangli135/BlogDemo/blob/master/toolbardemo/src/main/java/com/xks/toolbardemo/MainActivity.java)
+
 [shuaijia/MaterialDesignProject](https://github.com/shuaijia/MaterialDesignProject/blob/master/app/build.gradle)
+
 [Material Design整理系列](https://blog.csdn.net/jiashuai94/article/category/7141898)
+
 [一文彻底搞懂 Design 设计的 CoordinatorLayout 和 AppbarLayout 联动](http://www.apkbus.com/blog-898535-68661.html)
-[](https://github.com/Mike-bel/MDStudySamples/blob/master/app/src/main/java/com/yifeng/mdstudysamples/activity/FabActivity.java)
+
+[Mike-bel/MDStudySamples](https://github.com/Mike-bel/MDStudySamples/blob/master/app/src/main/java/com/yifeng/mdstudysamples/activity/FabActivity.java)
 
 cardview
 ========
