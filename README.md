@@ -15,6 +15,8 @@
 
 [Mike-bel/MDStudySamples](https://github.com/Mike-bel/MDStudySamples/blob/master/app/src/main/java/com/yifeng/mdstudysamples/activity/FabActivity.java)
 
+[coordinatorLayout使用详解及注意事项,看完这篇完全可以开发5.0的高级特效了](https://blog.csdn.net/qq_31340657/article/details/51918773)
+
 cardview
 ========
 
@@ -84,6 +86,10 @@ public class TabLayout extends HorizontalScrollView {
 
 ```
 
+```
+public class NestedScrollView extends FrameLayout implements NestedScrollingParent,
+        NestedScrollingChild, ScrollingView {
+```
 
 
 1、 CoordinatorLayout 是什么
@@ -106,19 +112,119 @@ CoordinatorLayout 是一个 “加强版” FrameLayout， 它主要有两个用
 
 
 
+AppBarLayout
+===
+
+AppBarLayout是一个垂直的LinearLayout，实现了Material Design中app bar的scrolling gestures特性。
+
+AppBarLayout的子View应该声明想要具有的“滚动行为”，这可以通过layout_scrollFlags属性或是setScrollFlags()方法来指定。
+
+AppBarLayout只有作为CoordinatorLayout的直接子View时才能正常工作，
+
+为了让AppBarLayout能够知道何时滚动其子View，我们还应该在CoordinatorLayout布局中提供一个可滚动View，
+
+我们称之为scrolling view。scrolling view和AppBarLayout之间的关联，
+
+通过将scrolling view的Behavior设为AppBarLayout.ScrollingViewBehavior来建立。
+
+即：AppBarLayout主要用来实现这样的功能：当位于同一父容器中的可滚动View发生滚动时，
+
+AppBarLayout会根据子View声明的滚动行为来对其子View进行相应的滚动。
 
 
 
 
+android:fitsSystemWindows="true"
+
+是一个boolean值的内部属性，让view可以根据系统窗口(如status bar)来调整自己的布局，如果值为true,就会调整view的paingding属性来给system windows留出空间...
+
+用于实现状态栏，即 沉浸式状态栏！
+
+app:popupTheme
+
+这个属性就是用来自定义我们弹出的菜单的样式，在之前的Actionbar的溢出菜单，
+
+我们是不能自定义他的样式的，只能根据你的theme来选择黑白两种，不能自己定义，现在我们可以定义弹出菜单的样式。
 
 
 
+CoordinatorLayout
+===
 
+app:layout_scrollFlags （子布局设置是否可滑动）
 
+android:layout_gravity 属性控制组件在布局中的位置
 
+app:layout_behavior="@string/appbar_scrolling_view_behavior" 通知布局中包含滑动组件！
 
+ 
 
+子布局通过app:layout_scrollFlags确定是否可滑动.
 
+给需要滑动的组件设置 app:layout_scrollFlags="scroll|enterAlways" 属性。 
+
+设置的layout_scrollFlags有如下几种选项： 
+
+scroll: 所有想滚动出屏幕的view都需要设置这个flag- 没有设置这个flag的view将被固定在屏幕顶部。
+
+enterAlways: 
+
+这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。 
+
+enterAlwaysCollapsed: 
+
+当你的视图已经设置minHeight属性又使用此标志时，你的视图只能已最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。 
+
+exitUntilCollapsed:
+ 
+滚动退出屏幕，最后折叠在顶端。
+
+CollapsingToolbarLayout
+===
+
+app:collapsedTitleGravity 
+
+指定折叠状态的标题如何放置，可选值:top、bottom等
+
+app:collapsedTitleTextAppearance="@style/TextAppearance.CollapsedTitle"
+
+指定折叠状态标题文字的样貌
+app:expandedTitleTextAppearance="@style/TextAppearance.ExpandedTitle"
+
+指定展开状态标题文字的样貌
+
+app:contentScrim="?attr/colorPrimaryDark"
+
+指定CollapsingToolbarLayout完全被滚出到屏幕外时的ColorDrawable
+app:expandedTitleGravity  展开状态的标题如何放置
+
+app:titleEnabled指定是否显示标题文本
+
+app:toolbarId指定与之关联的ToolBar，如果未指定则默认使用第一个被发现的ToolBar子View
+
+app:expandedTitleMarginStart="10dp"
+
+app:expandedTitleMargin
+
+app:expandedTitleMarginBottom
+
+app:expandedTitleMarginEnd
+
+展开状态改变标题文字的位置，通过margin设置
+
+app:layout_collapseParallaxMultiplier="0.7"
+
+设置视差的系数，介于0.0-1.0之间。
+
+app:layout_collapseMode="pin"（子布局设置折叠模式）
+有两种“pin”：固定模式，在折叠的时候最后固定在顶端；“parallax”：视差模式，在折叠的时候会有个视差折叠的效果。
+
+ 
+
+CollapsingToolbarLayout主要是提供一个可折叠的Toolbar容器，
+对容器中的不同View设置layout_collapseMode折叠模式，来达到不同的折叠效果。
+
+ 
 
 
 

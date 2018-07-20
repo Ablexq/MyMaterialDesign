@@ -56,7 +56,7 @@
             android:layout_margin="20dp"
             android:background="#e6e6e6"
             android:gravity="center"
-            android:text="NavigationDrawer" />
+            android:text="CoordinatorLayout" />
 
         <TextView
             android:id="@+id/tv6"

@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.xq.mymaterialdesign.cardview.CardViewActivity;
 import com.xq.mymaterialdesign.coordinate.CoorAppBarActivity;
+import com.xq.mymaterialdesign.coordinate.CoorAppBarActivity1;
 import com.xq.mymaterialdesign.coordinate.CoorToolBarActivity;
 import com.xq.mymaterialdesign.palette.PaletteActivity;
 import com.xq.mymaterialdesign.coordinate.ScrollingActivity;
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, ScrollingActivity.class));
                 break;
             case R.id.tv5:
+                startActivity(new Intent(MainActivity.this, CoorAppBarActivity1.class));
                 break;
             case R.id.tv6:
                 startActivity(new Intent(MainActivity.this, CoorToolBarActivity.class));
