@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="XuQiangStyle" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--Appbar背景色-->
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryDark">@color/themeColor</item>
+        <item name="colorAccent">@color/themeColor</item>
+
+        <!-- Toolbar 左侧箭头颜色 -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- ToolBar 右侧文字颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+    </style>
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/themeColor</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="base_toolbar" parent="toolbar" />
+
+    <!--控制头部据appbar的样式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <!--用于控制toolbar溢出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>
