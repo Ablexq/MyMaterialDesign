@@ -76,5 +76,14 @@
             android:gravity="center"
             android:text="CoorAppBar" />
 
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:background="#e6e6e6"
+            android:gravity="center"
+            android:text="BottomSheetBehavior" />
+
     </LinearLayout>
 </ScrollView>

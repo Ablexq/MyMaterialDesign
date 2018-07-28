@@ -221,12 +221,16 @@ app:layout_collapseMode="pin"（子布局设置折叠模式）
 
  
 
-CollapsingToolbarLayout主要是提供一个可折叠的Toolbar容器，
+CollapsingToolbarLayout 主要是提供一个可折叠的Toolbar容器，
 对容器中的不同View设置layout_collapseMode折叠模式，来达到不同的折叠效果。
 
  
+ConstraintLayout : 约束布局
+====
 
+[ConstraintLayout 完全解析 快来优化你的布局吧](https://blog.csdn.net/lmj623565791/article/details/78011599)
 
+ConstraintLayout属于Android Studio 2.2的新特性,可以有效地解决布局嵌套过多的问题
 
 
 

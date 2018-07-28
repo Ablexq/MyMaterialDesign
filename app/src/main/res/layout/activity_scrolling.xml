@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="观察者"
-        app:layout_behavior=".coordinate.FollowBehavior" />
+        app:layout_behavior="com.xq.mymaterialdesign.coordinate.behavior.FollowBehavior" />
 
     <Button
         android:id="@+id/btn"

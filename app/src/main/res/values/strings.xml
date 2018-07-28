@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">MyMaterialDesign</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="behavior_footer">com.xq.mymaterialdesign.coordinate.behavior.FooterBehavior</string>
+    <string name="behavior_footer_depend_appbar">com.xq.mymaterialdesign.coordinate.behavior.BottomBarBehavior
+    </string>
+    <string name="behavior_my_fab">com.xq.mymaterialdesign.coordinate.behavior.VerticalFabBehavior</string>
+    <string name="behavior_my_fab_scale">com.xq.mymaterialdesign.coordinate.behavior.ScaleDownShowBehavior
+    </string>
+    <string name="behavior_my_fab_horizontal">com.xq.mymaterialdesign.coordinate.behavior.HorizontalFabBehavior
+    </string>
+
+    <string name="behavior_weibo_content">com.xq.mymaterialdesign.coordinate.behavior.WeiboContentBehavior</string>
+    <string name="behavior_weibo_header">com.xq.mymaterialdesign.coordinate.behavior.WeiboHeaderPagerBehavior</string>
+
+    <string name="cancel">@string/bottom_dialog_lib_cancel</string>
+    <string name="bottom_dialog_lib_cancel">取消</string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
