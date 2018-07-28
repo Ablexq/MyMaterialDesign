@@ -5,6 +5,8 @@
 
 [使用CardView来设置阴影效果及点击效果](https://www.jianshu.com/p/9dd4db80d37a)
 
+[Android进阶---一个项目，一个Toolbar](https://www.jianshu.com/p/65cd2d4ad99a)
+
 [Toolbar设置详解----掉坑总结](https://www.jianshu.com/p/7b5c99e1cfa3)
 
 [Toolbar的使用](https://github.com/wangli135/BlogDemo/blob/master/toolbardemo/src/main/java/com/xks/toolbardemo/MainActivity.java)
